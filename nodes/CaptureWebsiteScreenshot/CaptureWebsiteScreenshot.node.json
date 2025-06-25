@@ -1,0 +1,18 @@
+{
+	"node": "n8n-nodes-htmlcsstoimg.captureWebsiteScreenshot",
+	"nodeVersion": "1.0",
+	"codexVersion": "1.0",
+	"categories": ["Development", "Images"],
+	"resources": {
+		"credentialDocumentation": [
+			{
+				"url": "https://htmlcsstoimg.com/"
+			}
+		],
+		"primaryDocumentation": [
+			{
+				"url": "https://htmlcsstoimg.com/"
+			}
+		]
+	}
+} 
