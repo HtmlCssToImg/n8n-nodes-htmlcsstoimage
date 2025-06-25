@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-htmlcsstoimage",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "",
   "keywords": [
     "n8n-community-node-package"
@@ -37,7 +37,7 @@
     ],
     "nodes": [
       "dist/nodes/CaptureWebsiteScreenshot/CaptureWebsiteScreenshot.node.js",
-      "dist/nodes/HtmlToImage/HtmlToImage.node.js"
+      "dist/nodes/HtmlCssToImg/HtmlCssToImg.node.js"
     ]
   },
   "devDependencies": {

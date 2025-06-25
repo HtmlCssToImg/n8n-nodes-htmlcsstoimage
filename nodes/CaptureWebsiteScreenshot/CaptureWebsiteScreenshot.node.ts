@@ -65,7 +65,7 @@ export class CaptureWebsiteScreenshot implements INodeType {
 				name: 'response_format',
 				type: 'options',
 				options: [
-					{ name: 'URL', value: 'url' },
+					{ name: 'URL in PNG', value: 'png' },
 					{ name: 'Image', value: 'image' },
 					{ name: 'Base64', value: 'base64' },
 				],

@@ -1,5 +1,5 @@
 {
-	"node": "n8n-nodes-htmlcsstoimg.htmlToImage",
+	"node": "n8n-nodes-htmlcsstoimg.htmlCssToImg",
 	"nodeVersion": "1.0",
 	"codexVersion": "1.0",
 	"categories": ["Development", "Images"],
