@@ -6,7 +6,7 @@ import type {
 } from 'n8n-workflow';
 import { NodeConnectionType, NodeOperationError } from 'n8n-workflow';
 
-export class HtmlCssToImg implements INodeType {
+export class HtmlToImage implements INodeType {
 	description: INodeTypeDescription = {
 		displayName: 'HTML To Image Old',
 		name: 'htmlToImage',

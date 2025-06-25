@@ -1,15 +1,15 @@
 {
   "name": "n8n-nodes-htmlcsstoimage",
   "version": "0.1.1",
-  "description": "",
+  "description": "n8n node to convert html css to image",
   "keywords": [
     "n8n-community-node-package"
   ],
   "license": "MIT",
   "homepage": "",
   "author": {
-    "name": "",
-    "email": ""
+    "name": "Rishabh Dugar",
+    "email": "rishabh.dugar.com@gmail.com"
   },
   "repository": {
     "type": "git",

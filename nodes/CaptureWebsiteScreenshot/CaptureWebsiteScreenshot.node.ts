@@ -40,7 +40,7 @@ export class CaptureWebsiteScreenshot implements INodeType {
 				description: 'Whether to capture the full page',
 			},
 			{
-				displayName: 'Wait Till (ms)',
+				displayName: 'Wait Till',
 				name: 'wait_till',
 				type: 'number',
 				default: 10000,
