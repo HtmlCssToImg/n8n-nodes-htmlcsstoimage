@@ -206,7 +206,7 @@ export class HtmlCssToImage implements INodeType {
 						json: true,
 					},
 				);
-				returnData.push({ json: responseData });
+				returnData.push({ json: responseData, pairedItem: i });
 
 			} catch (error) {
 				if (this.continueOnFail()) {
