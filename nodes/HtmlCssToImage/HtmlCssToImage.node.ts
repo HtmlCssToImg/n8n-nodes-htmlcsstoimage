@@ -169,14 +169,13 @@ export class HtmlCssToImage implements INodeType {
 		],
 	};
 
-	async execute(this: IExecuteFunctions): Promise<INodeExecutionData[][]> {
+	execute: IExecuteFunctions = async (this: IExecuteFunctions): Promise<INodeExecutionData[][]> => {
 		const items = this.getInputData();
 		const returnData: INodeExecutionData[] = [];
 
 		for (let i = 0; i < items.length; i++) {
 			try {
 				const operation = this.getNodeParameter('operation', i) as string;
-				const credentials = await this.getCredentials('htmlcsstoimgApi');
 				let body: Record<string, unknown> = {};
 				let response_format: string;
 
@@ -197,7 +196,8 @@ export class HtmlCssToImage implements INodeType {
 					body.response_format = response_format;
 				}
 
-				const responseData = await this.helpers.httpRequestWithAuthentication(
+				const responseData = await this.helpers.httpRequestWithAuthentication.call(
+					this,
 					'htmlcsstoimgApi',
 					{
 						method: 'POST',
@@ -206,6 +206,7 @@ export class HtmlCssToImage implements INodeType {
 						json: true,
 					},
 				);
+
 				returnData.push({ json: responseData });
 
 			} catch (error) {
