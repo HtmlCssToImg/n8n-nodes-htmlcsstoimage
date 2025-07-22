@@ -36,8 +36,7 @@
       "dist/credentials/HtmlcsstoimgApi.credentials.js"
     ],
     "nodes": [
-      "dist/nodes/CaptureWebsiteScreenshot/CaptureWebsiteScreenshot.node.js",
-      "dist/nodes/HtmlCssToImg/HtmlCssToImg.node.js"
+      "dist/nodes/HtmlCssToImage/HtmlCssToImage.node.js"
     ]
   },
   "devDependencies": {

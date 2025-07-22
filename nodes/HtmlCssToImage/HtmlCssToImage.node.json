@@ -1,5 +1,5 @@
 {
-	"node": "n8n-nodes-htmlcsstoimg.captureWebsiteScreenshot",
+	"node": "n8n-nodes-htmlcsstoimage.htmlCssToImage",
 	"nodeVersion": "1.0",
 	"codexVersion": "1.0",
 	"categories": ["Development", "Images"],
@@ -15,4 +15,4 @@
 			}
 		]
 	}
-} 
+}
