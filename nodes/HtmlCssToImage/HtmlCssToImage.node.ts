@@ -169,7 +169,7 @@ export class HtmlCssToImage implements INodeType {
 		],
 	};
 
-	execute: IExecuteFunctions = async (this: IExecuteFunctions): Promise<INodeExecutionData[][]> => {
+	async execute(this: IExecuteFunctions): Promise<INodeExecutionData[][]> {
 		const items = this.getInputData();
 		const returnData: INodeExecutionData[] = [];
 
@@ -206,7 +206,6 @@ export class HtmlCssToImage implements INodeType {
 						json: true,
 					},
 				);
-
 				returnData.push({ json: responseData });
 
 			} catch (error) {
