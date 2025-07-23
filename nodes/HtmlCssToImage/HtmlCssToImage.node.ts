@@ -10,6 +10,7 @@ export class HtmlCssToImage implements INodeType {
 	description: INodeTypeDescription = {
 		displayName: 'HTML/CSS to Image',
 		name: 'htmlCssToImage',
+		icon: { light: 'file:htmlCssToImage.svg', dark: 'file:htmlCssToImage.svg' },
 		group: ['transform'],
 		version: 1,
 		description: 'Convert HTML/CSS or a URL to an image',
