@@ -155,7 +155,7 @@ export class HtmlCssToImage implements INodeType {
 				name: 'response_format_url',
 				type: 'options',
 				options: [
-					{ name: 'URL in PNG', value: 'png' },
+					{ name: 'URL in PNG', value: 'url' },
 					{ name: 'Image', value: 'image' },
 					{ name: 'Base64', value: 'base64' },
 				],
