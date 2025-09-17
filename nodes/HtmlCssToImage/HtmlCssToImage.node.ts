@@ -25,6 +25,7 @@ export class HtmlCssToImage implements INodeType {
 				required: true,
 			},
 		],
+		usableAsTool: true,
 		properties: [
 			{
 				displayName: 'Operation',
