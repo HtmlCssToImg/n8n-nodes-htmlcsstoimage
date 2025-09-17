@@ -7,7 +7,7 @@ import {
 
 export class HtmlcsstoimgApi implements ICredentialType {
 	name = 'htmlcsstoimgApi';
-	displayName = 'Htmlcsstoimg API';
+	displayName = 'HTML to Image API';
 	documentationUrl = 'https://docs.htmlcsstoimg.com/';
 	properties: INodeProperties[] = [
 		{

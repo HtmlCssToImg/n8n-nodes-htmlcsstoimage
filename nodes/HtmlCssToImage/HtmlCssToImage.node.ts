@@ -8,12 +8,12 @@ import { NodeConnectionType, NodeOperationError } from 'n8n-workflow';
 
 export class HtmlCssToImage implements INodeType {
 	description: INodeTypeDescription = {
-		displayName: 'HTML/CSS to Image',
+		displayName: 'HTML to Image',
 		name: 'htmlCssToImage',
 		icon: { light: 'file:htmlCssToImage.svg', dark: 'file:htmlCssToImage.svg' },
 		group: ['transform'],
 		version: 1,
-		description: 'Convert HTML/CSS or a URL to an image',
+		description: 'Convert HTML/CSS or a URL to an Image',
 		defaults: {
 			name: 'HTML/CSS to Image',
 		},
@@ -37,13 +37,13 @@ export class HtmlCssToImage implements INodeType {
 						name: 'HTML to Image',
 						value: 'htmlToImage',
 						description: 'Convert HTML and CSS to an image',
-						action: 'Convert HTML and CSS to an image',
+						action: 'Convert HTML to an Image',
 					},
 					{
 						name: 'URL to Image',
 						value: 'urlToImage',
 						description: 'Capture a screenshot of a website',
-						action: 'Capture a screenshot of a website',
+						action: 'Capture Screenshot of a Website',
 					},
 				],
 				default: 'htmlToImage',
