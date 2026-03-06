@@ -3,6 +3,26 @@
 	"nodeVersion": "1.0",
 	"codexVersion": "1.0",
 	"categories": ["Development", "Images"],
+	"alias": [
+		"HTML",
+		"CSS",
+		"Image",
+		"Screenshot",
+		"Capture",
+		"Render",
+		"Convert",
+		"Website",
+		"Webpage",
+		"URL",
+		"PNG",
+		"Base64",
+		"Snapshot",
+		"Web Capture",
+		"HTML to Image",
+		"URL to Image",
+		"Page Screenshot",
+		"Generate Image"
+	],
 	"resources": {
 		"credentialDocumentation": [
 			{
