@@ -4,7 +4,7 @@ import type {
 	INodeType,
 	INodeTypeDescription,
 } from 'n8n-workflow';
-import { NodeConnectionType, NodeOperationError } from 'n8n-workflow';
+import { NodeOperationError } from 'n8n-workflow';
 
 export class HtmlCssToImage implements INodeType {
 	description: INodeTypeDescription = {
@@ -17,8 +17,8 @@ export class HtmlCssToImage implements INodeType {
 		defaults: {
 			name: 'HTML/CSS to Image',
 		},
-		inputs: [NodeConnectionType.Main],
-		outputs: [NodeConnectionType.Main],
+		inputs: ['main'],
+		outputs: ['main'],
 		credentials: [
 			{
 				name: 'htmlcsstoimgApi',
@@ -67,6 +67,19 @@ export class HtmlCssToImage implements INodeType {
 				type: 'string',
 				default: '',
 				description: 'The CSS to style the HTML',
+				displayOptions: {
+					show: {
+						operation: ['htmlToImage'],
+					},
+				},
+			},
+			{
+				displayName: 'Font',
+				name: 'font',
+				type: 'string',
+				default: '',
+				placeholder: 'Roboto|Montserrat',
+				description: 'Google Font names to load (multiple can be separated with |)',
 				displayOptions: {
 					show: {
 						operation: ['htmlToImage'],
@@ -184,6 +197,11 @@ export class HtmlCssToImage implements INodeType {
 				if (operation === 'htmlToImage') {
 					body.html_content = this.getNodeParameter('html_content', i) as string;
 					body.css_content = this.getNodeParameter('css_content', i) as string;
+					body.css = body.css_content; // The API expects 'css' instead of 'css_content'
+					const font = this.getNodeParameter('font', i, '') as string;
+					if (font) {
+						body.font = font;
+					}
 					body.viewPortWidth = this.getNodeParameter('viewPortWidth', i) as number;
 					body.viewPortHeight = this.getNodeParameter('viewPortHeight', i) as number;
 					response_format = this.getNodeParameter('response_format_html', i) as string;
